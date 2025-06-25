@@ -1,0 +1,18 @@
+import { criarBarraPesquisa } from './barraPesquisa.js';
+import { criarUsuarioHeader } from './usuarioHeader.js';
+
+export function criarHeader() {
+  const header = document.createElement('header');
+  header.innerHTML = `
+    <nav class="cabecalho__container">
+      <div class="logo__item">
+        <img class="logo-animado" src="/img/logo.png" alt="Logo do VidFlow" />
+      </div>
+      <div class="cabecalho__pesquisar__item"></div>
+      <div class="cabecalho__icones__item"></div>
+    </nav>
+  `;
+  header.querySelector('.cabecalho__pesquisar__item').appendChild(criarBarraPesquisa());
+  header.querySelector('.cabecalho__icones__item').replaceWith(criarUsuarioHeader());
+  return header;
+}
