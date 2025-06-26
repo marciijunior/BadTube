@@ -15,7 +15,7 @@
 
 body {
   font-family: Roboto, Arial, Helvetica, sans-serif;
-  background: linear-gradient(135deg, #ffffff  10%, #ffffff 100%);
+  background: linear-gradient(135deg, #ffffff 10%, #ffffff 100%);
   position: relative;
   width: 100%;
   height: 100vh;
@@ -23,7 +23,45 @@ body {
   font-size: 14px;
   color: var(--cinza-escuro);
   box-sizing: border-box;
-  text-align: center;
+}
+
+.menu__container {
+  font-size: 0.875rem; /* 14px */
+  background: #ffffff;
+  color: #000000;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 5.125rem; /* Exemplo: largura padrão para menu lateral recolhido (~82px) */
+  height: 100vh; /* Ocupa toda a altura da viewport */
+  z-index: 1000;
+  box-shadow: 0.125rem 0 0.625rem rgba(0, 0, 0, 0.1); /* Sombra à direita */
+  display: flex;
+  flex-direction: column; /* Itens um abaixo do outro */
+  justify-content: flex-start; /* Alinha os grupos de lista no topo */
+  align-items: flex-start; /* Alinha os grupos de lista à esquerda */
+}
+
+.menu__lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Itens da lista um abaixo do outro */
+  justify-content: flex-start; /* Alinha os itens da lista ao topo */
+  align-items: flex-start; /* Alinha os itens da lista à esquerda */
+}
+
+.menu__lista li {
+  width: 100%; /* Ocupa a largura total da lista */
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left; /* Garante alinhamento do texto à esquerda */
 }
 
 ::-webkit-scrollbar {
@@ -35,30 +73,16 @@ body {
 
 .cabecalho__container {
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: space-between;
   width: 100%;
   box-sizing: border-box;
   padding: 16px 16px; /* Mantém o padding desejado */
   gap: 16px;
-  background: linear-gradient(180deg, #68686898 10%, #ffffff 100%);
+  background: linear-gradient(180deg, #afafaf 10%, #ffffff 100%);
   box-shadow: none;
   border: none;
 }
-
-.logo__item {
-  margin-top: 0;
-  padding: 0;
-  max-width: 34vh;
-  display: flex;
-  align-items: center;
-  margin-left: 0;
-}
-
-.logo__item :hover {
-  cursor: pointer;
-}
-
 
 .cabecalho__pesquisar__item {
   flex: 1 1 0;
@@ -96,19 +120,19 @@ body {
 }
 
 .cabecalho__audio {
-  height: 40px;         /* igual à altura do input */
-  width: 40px;          /* quadrado, mas não afeta o input */
+  height: 40px; /* igual à altura do input */
+  width: 40px; /* quadrado, mas não afeta o input */
   background: none;
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
-  margin-left: 8px;     /* opcional, para espaçamento */
+  margin-left: 8px; /* opcional, para espaçamento */
 }
 
 .cabecalho__audio img {
-  height: 30px;         /* ajuste para centralizar e manter proporcional */
+  height: 30px; /* ajuste para centralizar e manter proporcional */
   width: 30px;
   object-fit: contain;
   display: block;
@@ -199,24 +223,23 @@ body {
 /* MENU LATERAL */
 
 .menu__container {
-  font-size: 14px;
-  background: #ffffff !important; /* preto quase puro */
+  font-size: 0.875rem;
+  background: #ffffff;
   color: #000000;
-  height: 100vh;
-  min-height: 100vh;
+  height: 3.5rem;
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
-  width: 82px; /* ajuste conforme seu layout */
-  z-index: 100;
+  width: 100%;
+  z-index: 1000;
   overflow-y: auto;
-  border: 2px transparent #808080;
   box-shadow: #000000 0px 0px 10px 0px;
-  border-radius: 0vh 1vh 1vh 1vh;
+  border-radius: 0vh 1vh 0vh 0vh;
+  text-align: left;
 }
 
 .menu__container::-webkit-scrollbar {
-  width: 16px;
+  width: 1rem;
   background: transparent;
 }
 
@@ -313,14 +336,16 @@ body {
   height: 63px;
   color: var(--branco);
   font-size: 16px;
-  background: linear-gradient(90deg, #ffffff 0%, #f7f7f7 100%) !important; /* azul claro */
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #3821214d 100%
+  ) !important; /* azul claro */
   padding: 0 20px;
   position: fixed;
   top: 80px;
   right: 0;
   left: 0;
-  /* transition: transform 0.5s ease-in-out;
-    transform: translateX(0); */
 }
 
 .superior__itens {
@@ -360,6 +385,7 @@ body {
 }
 
 .videos__item {
+  padding: 1vh;
   display: block;
   height: 303px;
   width: 280px;
@@ -367,10 +393,10 @@ body {
 }
 
 .videos__item:hover {
-  box-shadow: 0 2px 10px 0 #684d4d98, 0 1px 2px 0 rgba(255,255,255,0.18);
-  transform: translateY(-4px) scale(1.01);
-  transition: box-shadow 0.3s, transform 0.5s;
-  border-radius: 12px;
+  box-shadow:
+    0 2px 10px 0 #4d444498,
+    0 1px 2px 0 rgba(255, 255, 255, 0.18);
+  border-radius: 2vh;
 }
 
 iframe {
@@ -395,68 +421,194 @@ iframe {
   color: var(--cinza-escuro);
 }
 
-@media (min-width: 834px) {
+.logo__item {
+  margin-top: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+}
+
+.logo__item :hover {
+  cursor: pointer;
+}
+
+.logo__item img.logo__desktop {
+  display: block;
+  max-width: 34vh;
+  height: auto;
+}
+
+.logo__item img.logo__mobile {
+  display: none;
+}
+
+@media (max-width: 834px) {
   body {
     height: 100vh;
   }
 
-  /* ESTILOS DO MENU LATERAL */
+  .cabecalho__switch {
+    position: relative;
+    display: inline-block;
+    padding: 13px 30px 13px 13px;
+    width: 60px;
+    height: 34px;
+    display: none;
+  }
 
-.logo__item video.logo-animado,
-.logo__item img.logo-animado {
-  height: auto;
-  max-width: 100%;
-  display: block;
-  
-}
+  .cabecalho__switch-input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    display: none;
+  }
+
+  .cabecalho__switch-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--cinza-claro);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 34px;
+    display: none;
+  }
+
+  .cabecalho__switch-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--branco);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 50%;
+    display: none;
+  }
+
+  .cabecalho__switch-input:checked + .cabecalho__switch-slider {
+    background-color: #f3f3f3;
+    display: none;
+  }
+
+  .cabecalho__switch-input:focus + .cabecalho__switch-slider {
+    box-shadow: 0 0 1px var(--cinza-claro);
+    display: none;
+  }
+
+  .cabecalho__switch-input:checked + .cabecalho__switch-slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    display: none;
+  }
+
+  .cabecalho__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px 16px; /* Mantém o padding desejado */
+    gap: 16px;
+    background: linear-gradient(180deg, #afafaf 10%, #ffffff 100%);
+    box-shadow: none;
+    border: none;
+  }
+
+  .logo__item img.logo__desktop {
+    display: none;
+  }
+
+  .logo__item img.logo__mobile {
+    display: block;
+    max-width: 12vh;
+    height: auto;
+  }
 
   .menu__container {
-    font-size: 16px;
+    font-size: 0.875rem; /* 14px */
+    background: #ffffff; /* Pode usar var(--branco) */
+    color: #000000;
+    position: fixed;
+    bottom: 0; /* ALINHADO NA PARTE INFERIOR */
+    left: 0; /* ENCOSTA NA ESQUERDA */
+    width: 100%; /* Ocupa toda a largura */
+    height: 3.5rem; /* Altura padrão para uma barra de navegação  inferior (56px) */
+    z-index: 1000; /* Garante que esteja acima do conteúdo */
+    box-shadow: 0 -0.125rem 1rem rgba(0, 0, 0, 0.308); /* Sombra acima da barra */
+    border-radius: 0.5rem 0.5rem 0 0; /* Arredonda os cantos superiores, inferiores retos */
+    overflow: hidden; /* Garante que não haja rolagem interna para uma barra horizontal */
+    display: flex; /* Transforma o contêiner em um flex container */
+    justify-content: space-around; /* Distribui os grupos de itens (ul.menu__lista) uniformemente */
+    align-items: center; /* Centraliza os itens verticalmente na barra */
+    flex-direction: row; /* Garante que os grupos de itens fiquem em linha */
   }
 
   .menu__lista {
-    padding-top: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
   }
 
   .menu__lista li {
     width: 100%;
+    padding: 0.25rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    flex-grow: 1;
+    text-align: center;
   }
 
-  /* ESTILOS DA SECAO SUPERIOR */
-
-  .superior__secao__container {
-    border-top: var(--azul-medio) 1px solid;
-    border-bottom: var(--azul-medio) 1px solid;
-    width: auto;
-    left: 82px;
-  }
-
-  /*ESTILOS SEÇÃO VÍDEOS */
+.superior__secao__container {
+  display: none;
+  height: 63px;
+  color: var(--branco);
+  font-size: 16px;
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #ffffff 100%
+  ) !important; /* azul claro */
+  padding: 0;
+  position: fixed;
+  top: 70px;
+  right: 0;
+  left: 0;
+}
 
   .videos__container {
-    padding-left: 90px;
-    padding-right: 17px;
+    display: flex;
   }
 }
 
 @media (min-width: 1440px) {
-  /* SEÇÃO SUPERIOR */
-
   .superior__secao__container {
-    left: 247px;
+    left: 15.4375rem;
   }
-
-  /* ESTILOS DO MENU LATERAL */
 
   .menu__lista {
-    border-bottom: 1.5px solid var(--azul-medio);
+    border-bottom: 0.09375rem solid var(--azul-medio);
   }
 
-  /* ESTILOS VIDEOS */
-
   .videos__container {
-    padding-right: 10px;
-    padding-left: 248px;
+    padding-right: 0.625rem;
+    padding-left: 15.5rem;
   }
 }
 
