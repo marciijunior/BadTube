@@ -73,14 +73,10 @@ body {
 }
 
 .pesquisar__input {
-  width: 320px;      /* ajuste para o tamanho desejado */
-  min-width: 200px;  /* opcional: tamanho mínimo */
-  max-width: 100%;   /* opcional: não ultrapassa o container */
   padding: 9px;
   border: 1px solid var(--cinza-claro);
   border-radius: 32px 0px 0px 32px;
   font-size: 16px;
-  box-sizing: border-box;
 }
 
 .pesquisar__input-teclado {
