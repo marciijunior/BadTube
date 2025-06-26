@@ -1,6 +1,4 @@
 export const videos = [
-{
-    "videos": [
       {
         "id": 1,
         "titulo": "Conhecendo a linguagem Go | Hipsters.Talks",
@@ -104,7 +102,5 @@ export const videos = [
         "imagem": "https://github.com/marciijunior/BadTube/blob/main/public/img/sidebar/Avatar_Bad.png?raw=true",
         "id": 13,
         "categoria": "Inteligência Artificial"
-      }
-    ]
-  }
+      },
 ];
