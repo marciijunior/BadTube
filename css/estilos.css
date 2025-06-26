@@ -41,24 +41,22 @@ body {
   box-sizing: border-box;
   padding: 16px 16px; /* Mantém o padding desejado */
   gap: 16px;
-  background: linear-gradient(180deg, #684d4d98 10%, #ffffff 100%);
+  background: linear-gradient(180deg, #68686898 10%, #ffffff 100%);
   box-shadow: none;
   border: none;
 }
 
 .logo__item {
-  max-width: auto; /* ajuste conforme necessário */
-  max-height: 0; /* ajuste conforme necessário */
+  margin-top: 0;
+  padding: 0;
+  max-width: 34vh;
   display: flex;
   align-items: center;
   margin-left: 0;
 }
 
 .logo__item :hover {
-  transition: 1s;
-  transform: scale(1.01);
   cursor: pointer;
-
 }
 
 
@@ -75,15 +73,19 @@ body {
 }
 
 .pesquisar__input {
-  padding: 8.4px;
+  width: 320px;      /* ajuste para o tamanho desejado */
+  min-width: 200px;  /* opcional: tamanho mínimo */
+  max-width: 100%;   /* opcional: não ultrapassa o container */
+  padding: 9px;
   border: 1px solid var(--cinza-claro);
   border-radius: 32px 0px 0px 32px;
   font-size: 16px;
+  box-sizing: border-box;
 }
 
 .pesquisar__input-teclado {
   position: absolute;
-  right: 35%;
+  right: 36%;
   top: 30%;
 }
 
@@ -371,7 +373,7 @@ body {
 .videos__item:hover {
   box-shadow: 0 2px 10px 0 #684d4d98, 0 1px 2px 0 rgba(255,255,255,0.18);
   transform: translateY(-4px) scale(1.01);
-  transition: box-shadow 0.3s, transform 0.3s;
+  transition: box-shadow 0.3s, transform 0.5s;
   border-radius: 12px;
 }
 
@@ -406,17 +408,10 @@ iframe {
 
 .logo__item video.logo-animado,
 .logo__item img.logo-animado {
-  height: 6vh;
-  width: auto;
+  height: auto;
   max-width: 100%;
   display: block;
   
-}
-
-.logo__item video.logo-animado,
-.logo__item img.logo-animado :hover {
-  transition: 0s;
-  scale: 1.1;
 }
 
   .menu__container {

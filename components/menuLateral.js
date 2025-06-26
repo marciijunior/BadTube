@@ -35,25 +35,25 @@ export function criarMenuLateral() {
         <a class="menu__itens" href="#"><i class="icone__mostrar icone-item"></i><span>Mostrar mais 2</span></a>
       </li>
       <li>
-        <a class="menu__itens" href="#"><i class="icone__deschamps icone-item"></i><span>Felipe Deschamps</span></a>
+        <a class="menu__itens" href="#"><i class="icone__deschamps icone-item"></i><span>Capibarca</span></a>
       </li>
       <li>
-        <a class="menu__itens" href="#"><i class="icone__nerd icone-item"></i><span>Jovem Nerd</span></a>
+        <a class="menu__itens" href="#"><i class="icone__nerd icone-item"></i><span>Capimarcha</span></a>
       </li>
       <li>
-        <a class="menu__itens" href="#"><i class="icone__souto icone-item"></i><span>Mario Souto</span></a>
+        <a class="menu__itens" href="#"><i class="icone__souto icone-item"></i><span>Capi solaris</span></a>
       </li>
       <li>
-        <a class="menu__itens" href="#"><i class="icone__iamarino icone-item"></i><span>Atila Iamarino</span></a>
+        <a class="menu__itens" href="#"><i class="icone__iamarino icone-item"></i><span>Caipiravara</span></a>
       </li>
       <li>
-        <a class="menu__itens" href="#"><i class="icone__ballerini icone-item"></i><span>Rafaella Ballerini</span></a>
+        <a class="menu__itens" href="#"><i class="icone__ballerini icone-item"></i><span>Capitangavara</span></a>
       </li>
       <li>
-        <a class="menu__itens" href="#"><i class="icone__gaveta icone-item"></i><span>Gaveta</span></a>
+        <a class="menu__itens" href="#"><i class="icone__gaveta icone-item"></i><span>Capivara ao cubo</span></a>
       </li>
       <li>
-        <a class="menu__itens" href="#"><i class="icone__alura icone-item"></i><span>Alura</span></a>
+        <a class="menu__itens" href="#"><i class="icone__alura icone-item"></i><span>Capivara dental</span></a>
       </li>
       <li>
         <a class="menu__itens inscricoes" href="#">INSCRIÇÕES</a>
