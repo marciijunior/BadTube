@@ -71,9 +71,21 @@ function filtrarPorCategoria(filtro) {
 }
 
 // Carregar vídeos e adicionar filtros após renderizar
-axios.get('http://localhost:3000/videos')
-  .then(response => {
-    const app = document.getElementById('app');
-    app.appendChild(criarListaVideos(response.data));
-    adicionarFiltros(); // <-- Adiciona os filtros após montar os vídeos
-  });
+// axios.get('http://localhost:3000/videos')
+//   .then(response => {
+//     const app = document.getElementById('app');
+//     app.appendChild(criarListaVideos(response.data));
+//     adicionarFiltros(); // <-- Adiciona os filtros após montar os vídeos
+//   });
+
+import { videos } from './videos.js';
+import { criarListaVideos } from './components/listaVideos.js';
+
+// obtém o container do app
+const app = document.getElementById('app');
+
+// monta a lista usando os dados locais
+app.appendChild(criarListaVideos(videos));
+
+// chama função que adiciona filtros (separada no seu código)
+adicionarFiltros();
