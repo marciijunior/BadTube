@@ -1,5 +1,7 @@
-import axios from 'axios';
+// Remova o axios porque não vai usar mais
+// import axios from 'axios';
 
+// Função para criar a lista, recebe os vídeos como parâmetro
 export function criarListaVideos(videos = []) {
   const ul = document.createElement('ul');
   ul.className = 'videos__container';
@@ -22,8 +24,8 @@ export function criarListaVideos(videos = []) {
   return ul;
 }
 
-// Função para adicionar os filtros
-function adicionarFiltros() {
+// Função para adicionar os filtros — exporte para usar no main.js
+export function adicionarFiltros() {
   const barraDePesquisa = document.querySelector(".pesquisar__input");
   if (barraDePesquisa) {
     barraDePesquisa.addEventListener("input", filtrarPesquisa);
@@ -47,7 +49,6 @@ function filtrarPesquisa() {
         .textContent.toLowerCase();
       let valorFiltro = barraDePesquisa.value.toLowerCase();
 
-      // Use "" para resetar ao padrão do CSS (NÃO use "block")
       video.style.display = titulo.includes(valorFiltro) ? "" : "none";
     }
   } else {
@@ -70,22 +71,10 @@ function filtrarPorCategoria(filtro) {
   }
 }
 
-// Carregar vídeos e adicionar filtros após renderizar
+// Remove o trecho do axios/fetch — não será mais usado
 // axios.get('http://localhost:3000/videos')
 //   .then(response => {
 //     const app = document.getElementById('app');
 //     app.appendChild(criarListaVideos(response.data));
 //     adicionarFiltros(); // <-- Adiciona os filtros após montar os vídeos
 //   });
-
-import { videos } from './videos.js';
-import { criarListaVideos } from './components/listaVideos.js';
-
-// obtém o container do app
-const app = document.getElementById('app');
-
-// monta a lista usando os dados locais
-app.appendChild(criarListaVideos(videos));
-
-// chama função que adiciona filtros (separada no seu código)
-adicionarFiltros();
