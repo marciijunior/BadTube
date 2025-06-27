@@ -565,7 +565,7 @@ iframe {
     justify-content: space-between;
     width: 100%;
     box-sizing: border-box;
-    padding: 16px 16px; /* Mantém o padding desejado */
+    padding: 16px 16px;
     gap: 16px;
     background: linear-gradient(180deg, #afafaf 10%, #ffffff 100%);
     box-shadow: none;
@@ -655,7 +655,7 @@ iframe {
     grid-template-columns: 1fr; /* Define que haverá APENAS UMA coluna de largura total */
     gap: 10px; /* Mantém o espaçamento entre os vídeos */
     padding: 10px; /* Exemplo: Ajuste o padding do container para telas menores */
-    margin-top: 13vh;
+    margin-top: 34%; /* Adiciona uma margem superior de 13% da altura da viewport */
   }
 
   .videos__item {
