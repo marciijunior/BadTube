@@ -150,7 +150,7 @@ body {
   background-image: url(/img/topbar/apps.png);
   background-repeat: no-repeat;
   background-position: center;
-  padding: 13px 30px 13px 13px;
+  padding: 1vw 1vw 1vw 1vw;
   background-size: 24px;  
 }
 
@@ -158,7 +158,7 @@ body {
   background-image: url(../img/topbar/notifications.png);
   background-repeat: no-repeat;
   background-position: center;
-  padding: 13px 30px 13px 13px;
+  padding: 1vw 1vw 1vw 1vw;
   background-size: 21px;
 }
 
@@ -166,7 +166,7 @@ body {
   background-image: url(../img/topbar/Avatar.png);
   background-repeat: no-repeat;
   background-position: center;
-  padding: 13px 30px 13px 32px;
+  padding: 1vw 1vw 1vw 1vw;
   background-size: 24px;
 }
 
@@ -343,7 +343,7 @@ body {
   background: linear-gradient(
     90deg,
     #ffffff 0%,
-    #3821214d 100%
+    #041832 180%
   ) !important; /* azul claro */
   padding: 0 20px;
   position: fixed;
@@ -361,7 +361,7 @@ body {
   display: inline-block;
   color: var(--cinza-escuro);
   font-size: 16px;
-  background-color: #e0e0e0;
+  background-color: #ffffff;
   border-radius: 20px;
   padding: 8px 20px;
   cursor: pointer;
@@ -369,7 +369,7 @@ body {
 
 .superior__item:hover {
   color: var(--branco);
-  background-color: #684d4d98;
+  background-color: #041832;
   transition: 0.1s;
 }
 
@@ -499,7 +499,7 @@ iframe {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--cinza-claro);
+    background-color: #e0e0e0;
     -webkit-transition: 0.4s;
     transition: 0.4s;
     border-radius: 34px;
@@ -618,6 +618,10 @@ iframe {
   top: 70px;
   right: 0;
   left: 0;
+}
+
+.superior__item {
+  background-color: #e7e7e7;
 }
 
   .videos__container {
