@@ -1,106 +1,131 @@
 export const videos = [
       {
         "id": 1,
-        "titulo": "Conhecendo a linguagem Go | Hipsters.Talks",
-        "descricao": "3 mil visualizações",
-        "url": "https://www.youtube.com/embed/y8FeZMv37WU",
+        "titulo": "Gravitation' by Richard Feynman",
+        "descricao": "836 mil visualizações",
+        "url": "https://www.youtube.com/embed/q_edsSpDzHg?si=9hMuXc7Xd0NEgqI3",
         "imagem": "https://github.com/marciijunior/BadTube/blob/main/public/img/sidebar/Avatar_Bad.png?raw=true",
         "categoria": "Programação"
       },
       {
         "id": 2,
-        "titulo": "Desmistificando mobile - Linguagens e Frameworks",
-        "descricao": "1,5 mil visualizações",
-        "url": "https://www.youtube.com/embed/fmu1LQvZhms",
+        "titulo": "Math vs Code: 10 Concepts That Are Basically the Same! (With C++ Examples)",
+        "descricao": "18 mil visualizações",
+        "url": "https://www.youtube.com/embed/ZKIH5B5Hn9E?si=wfy5YCFailuFvtky",
         "imagem": "https://github.com/marciijunior/BadTube/blob/main/public/img/sidebar/Avatar_Bad.png?raw=true",
         "categoria": "Mobile"
       },
       {
         "id": 3,
-        "titulo": "Orientação a objetos com Roberta Arcoverde | #Hipster...",
-        "descricao": "30 mil visualizações",
-        "url": "https://www.youtube.com/embed/jpuJ1qrluoU",
+        "titulo": "SACANI RESPONDE [PARADOXO DE FERMI] - Ciência Sem Fim #308",
+        "descricao": "102 mil visualizações",
+        "url": "https://www.youtube.com/embed/a348b73jX4o?si=2p_1Tr__r-XKzzTx",
         "imagem": "https://github.com/marciijunior/BadTube/blob/main/public/img/sidebar/Avatar_Bad.png?raw=true",
         "categoria": "Programação"
       },
       {
         "id": 4,
-        "titulo": "Linguagens e ferramentas usadas em Ciência de Dados...",
-        "descricao": "2,5 mil visualizações",
-        "url": "https://www.youtube.com/embed/h83e1aAM5xQ",
+        "titulo": "Brian Cox: The quantum roots of reality | Full Interview",
+        "descricao": "1,1 mi de visualizações",
+        "url": "https://www.youtube.com/embed/kO41iURud9c?si=LVfGxUReqnYKq78q",
         "imagem": "https://github.com/marciijunior/BadTube/blob/main/public/img/sidebar/Avatar_Bad.png?raw=true",
         "categoria": "Data Science"
       },
       {
         "id": 5,
-        "titulo": "Reencontrando a paixão por programar: Beatriz Ramerindo",
-        "descricao": "1,2 mil visualizações",
-        "url": "https://www.youtube.com/embed/CnB3eLTrkn4",
+        "titulo": "O maior matemático que já existiu",
+        "descricao": "1,2 mi de visualizações",
+        "url": "https://www.youtube.com/embed/LmmyAOkajVM?si=l9J7jGDzspDUYdRD",
         "imagem": "https://github.com/marciijunior/BadTube/blob/main/public/img/sidebar/Avatar_Bad.png?raw=true",
         "categoria": "Podcasts"
       },
       {
         "id": 6,
-        "titulo": "Híbridos: Flutter e React Native | Desmistificando..",
+        "titulo": "Descoberta surpreendente de cientista da computação: como espremer espaço no tempo",
         "descricao": "1,6 mil visualizações",
-        "url": "https://www.youtube.com/embed/vf9P_PycgRw",
+        "url": "https://www.youtube.com/embed/8JuWdXrCmWg?si=ndWSvmOHO7VIfuyq",
         "imagem": "https://github.com/marciijunior/BadTube/blob/main/public/img/sidebar/Avatar_Bad.png?raw=true",
         "categoria": "Mobile"
       },
       {
         "id": 7,
-        "titulo": "Data Science na prática- com Jéssika Ribeiro do Grupo...",
-        "descricao": "3,2 mil visualizações",
-        "url": "https://www.youtube.com/embed/Nts3P35mHzE",
+        "titulo": "Data Structures and Algorithms in 15 Minutes",
+        "descricao": "1,2 mi de visualizações",
+        "url": "https://www.youtube.com/embed/oz9cEqFynHU?si=TuFhP_sWUGC64WGJ",
         "imagem": "https://github.com/marciijunior/BadTube/blob/main/public/img/sidebar/Avatar_Bad.png?raw=true",
         "categoria": "Data Science"
       },
       {
         "id": 8,
-        "titulo": "baNaNa | Memes do JavaScript #2",
-        "descricao": "1,2 mil visualizações",
-        "url": "https://www.youtube.com/embed/HBVCsBtsmzA",
+        "titulo": "The Art of Linear Programming",
+        "descricao": "801 mil visualizações",
+        "url": "https://www.youtube.com/embed/E72DWgKP_1Y?si=kMlSpvfVLPiIkz6F",
         "imagem": "https://github.com/marciijunior/BadTube/blob/main/public/img/sidebar/Avatar_Bad.png?raw=true",
         "categoria": "Programação"
       },
       {
-        "titulo": "[Casa do Código] Live de lançamento: Navegando no Universo da Programação",
-        "descricao": "1 mil visualizações",
-        "url": "https://www.youtube.com/embed/z43rcfjXOxU",
+        "titulo": "Math Olympiad//A Tricky Math Olympiad Exponential Problem Solve For x//Can You Solve ??",
+        "descricao": "3,9 mil visualizações",
+        "url": "https://www.youtube.com/embed/4aw0MQiHSJ4?si=rSzRX2njN0B5-w9W",
         "imagem": "https://github.com/marciijunior/BadTube/blob/main/public/img/sidebar/Avatar_Bad.png?raw=true",
         "id": 9,
         "categoria": "Ao Vivo"
       },
       {
-        "titulo": "Guia de carreira Front-end | #HipstersPontoTube",
-        "descricao": "18 mil visualizações",
-        "url": "https://www.youtube.com/embed/fpth65ts3cw",
+        "titulo": "Cada símbolo matemático explicado em 14 minutos",
+        "descricao": "959 mil visualizações",
+        "url": "https://www.youtube.com/embed/I0vDXO5FeaI?si=E8234axZY-H7ydO_",
         "imagem": "https://github.com/marciijunior/BadTube/blob/main/public/img/sidebar/Avatar_Bad.png?raw=true",
         "id": 10,
         "categoria": "Debates"
       },
       {
-        "titulo": "Educação coorporativa",
-        "descricao": "4 mil visualizações",
-        "url": "https://www.youtube.com/embed/IGFSiBJIXFQ",
+        "titulo": "Why is pi here? And why is it squared? A geometric answer to the Basel problem",
+        "descricao": "6,7 mi de visualizações",
+        "url": "https://www.youtube.com/embed/d-o3eB9sfls?si=3uyz9tdHQk0te1F_",
         "imagem": "https://github.com/marciijunior/BadTube/blob/main/public/img/sidebar/Avatar_Bad.png?raw=true",
         "id": 11,
         "categoria": "Inovação"
       },
       {
-        "titulo": "Como deixar o Layout Responsivo no seu site | #AluraMais",
-        "descricao": "7 mil visualizações",
-        "url": "https://www.youtube.com/embed/kyFiT4ofMwk",
+        "titulo": "Introductory Calculus: Oxford Mathematics 1st Year Student Lecture",
+        "descricao": "11 mi de visualizações",
+        "url": "https://www.youtube.com/embed/I3GWzXRectE?si=VALrCslDEqXowODf",
         "imagem": "https://github.com/marciijunior/BadTube/blob/main/public/img/sidebar/Avatar_Bad.png?raw=true",
         "id": 12,
         "categoria": "Front-end"
       },
       {
-        "titulo": "Será que a inteligência artificial será tão poderosa quanto os seres humanos? com Gui Silveira",
-        "descricao": "12 mil visualizações",
-        "url": "https://www.youtube.com/embed/Kk3vBRqKA2o",
+        "titulo": "Necessity of complex numbers",
+        "descricao": "3,2 mi de visualizações",
+        "url": "https://www.youtube.com/embed/f079K1f2WQk?si=xddsy3Y8jnWfutor",
         "imagem": "https://github.com/marciijunior/BadTube/blob/main/public/img/sidebar/Avatar_Bad.png?raw=true",
         "id": 13,
         "categoria": "Inteligência Artificial"
       },
+      {
+        "titulo": "VI UM JACARÉ DE PERTINHO I Repórter Doidão BR - Rio Branco #07",
+        "descricao": "102 mil visualizações",
+        "url": "https://www.youtube.com/embed/Pf_ZPwzzTY4?si=3Blk4WnIG8hdmqvW",
+        "imagem": "https://github.com/marciijunior/BadTube/blob/main/public/img/sidebar/Avatar_Bad.png?raw=true",
+        "id": 14,
+        "categoria": "Inteligência Artificial"
+      },
+      {
+        "titulo": "Arlindo Cruz - Meu Lugar (Ao Vivo)",
+        "descricao": "87 mi de visualizações",
+        "url": "https://www.youtube.com/embed/vNK58tL6J70?si=8Gcpk6h9LkQDV2lp",
+        "imagem": "https://github.com/marciijunior/BadTube/blob/main/public/img/sidebar/Avatar_Bad.png?raw=true",
+        "id": 15,
+        "categoria": "Inteligência Artificial"
+      },
+      {
+        "titulo": "Albert Einstein Explains Theory of Relativity | Albert Einstein Real Video | Colour Footage",
+        "descricao": "102 mil visualizações",
+        "url": "https://www.youtube.com/embed/aNuuYKieHRY?si=60xC_kHyRRMGnj1c",
+        "imagem": "https://github.com/marciijunior/BadTube/blob/main/public/img/sidebar/Avatar_Bad.png?raw=true",
+        "id": 16,
+        "categoria": "Inteligência Artificial"
+      },
+      
 ];

@@ -79,7 +79,7 @@ body {
   box-sizing: border-box;
   padding: 16px 16px; /* Mantém o padding desejado */
   gap: 16px;
-  background: linear-gradient(180deg, #afafaf 10%, #ffffff 100%);
+  background: linear-gradient(180deg, #afafaff6 10%, #fffffff6 100%);
   box-shadow: none;
   border: none;
 }
@@ -345,8 +345,8 @@ body {
   font-size: 16px;
   background: linear-gradient(
     90deg,
-    #ffffff 0%,
-    #041832 180%
+    #fffffff6 0%,
+    #041832f6 180%
   ) !important; /* azul claro */
   padding: 0 20px;
   position: fixed;
@@ -387,16 +387,25 @@ body {
   color: black;
   padding: 153px 20px 10px 20px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  flex-wrap: wrap; /* Muito Importante: Permite que os itens quebrem para a próxima linha */
+  gap: 10px; /* Mantém o espaçamento entre os vídeos */
+  justify-content: flex-start; /* Alinha os itens no início da linha */
 }
 
 .videos__item {
   padding: 1vh;
-  display: block;
-  height: 303px;
-  width: 280px;
-  flex-grow: 1;
+  display: block; /* Pode ser removido, pois flexbox já lida com o display */
+  height: 303px; /* Mantenha a altura se desejar */
+  flex-grow: 0; /* Impede que os itens cresçam e ocupem espaço extra */
+  flex-shrink: 0; /* Impede que os itens encolham */
+  /* Calcule a largura para 4 itens menos o gap.
+     Se o container tem 100% de largura e 3 gaps de 10px,
+     então 4 itens ocupam (100% - 3*10px) / 4.
+     Uma forma mais robusta é usar calc().
+  */
+  flex-basis: calc(25% - 7.5px); /* (100% / 4) - (3/4 * gap) = 25% - 7.5px para um gap de 10px */
+  /* Ou se preferir um valor fixo, mas menos responsivo */
+  /* width: 24%; */ /* Aproximadamente 100%/4 - um pouco para o gap */
 }
 
 .videos__item:hover {
@@ -443,6 +452,7 @@ iframe {
 .logo__item img.logo__desktop {
   display: block;
   max-width: 34vh;
+  padding: 0px 2px 2px 2px;
   height: auto;
 }
 
@@ -615,29 +625,48 @@ iframe {
     text-align: center;
   }
 
-.superior__secao__container {
-  display: none;
-  height: 63px;
-  color: var(--branco);
-  font-size: 16px;
-  background: linear-gradient(
-    90deg,
-    #ffffff 0%,
-    #ffffff 100%
-  ) !important; /* azul claro */
-  padding: 0;
-  position: fixed;
-  top: 70px;
-  right: 0;
-  left: 0;
-}
+  .superior__secao__container {
+   display: none;
+   height: 63px;
+   color: var(--branco);
+   font-size: 16px;
+   background: linear-gradient(
+     90deg,
+     #ffffff 0%,
+     #ffffff 100%
+   ) !important; /* azul claro */
+   padding: 0;
+   position: fixed;
+    top: 70px;
+   right: 0;
+   left: 0;
+  }
 
-.superior__item {
-  background-color: #e7e7e7;
-}
+  .superior__item {
+    background-color: #e7e7e7;
+  }
 
   .videos__container {
     display: flex;
+  }
+
+  .videos__container {
+    display: grid; /* Garante que o container use Grid Layout */
+    grid-template-columns: 1fr; /* Define que haverá APENAS UMA coluna de largura total */
+    gap: 10px; /* Mantém o espaçamento entre os vídeos */
+    padding: 10px; /* Exemplo: Ajuste o padding do container para telas menores */
+    margin-top: 13vh;
+  }
+
+  .videos__item {
+    /* É crucial que não haja nenhuma largura fixa ou que force múltiplos itens */
+    width: auto; /* Garante que o item ocupe a largura da coluna do grid */
+    height: auto; /* Permite que a altura se ajuste ao conteúdo do vídeo */
+    /* Se você tinha `flex-basis`, `flex-grow` ou `flex-shrink` para desktop,
+       certifique-se de que eles não estejam ativos aqui ou redefina-os: */
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 1;
   }
 }
 
