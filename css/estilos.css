@@ -143,6 +143,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   padding: 20px;
+  background-size: 24px;  
 }
 
 .cabecalho__apps {
@@ -150,6 +151,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   padding: 13px 30px 13px 13px;
+  background-size: 24px;  
 }
 
 .cabecalho__notificacoes {
@@ -157,13 +159,15 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   padding: 13px 30px 13px 13px;
+  background-size: 21px;
 }
 
 .cabecalho__avatar {
   background-image: url(../img/topbar/Avatar.png);
   background-repeat: no-repeat;
   background-position: center;
-  padding: 13px 30px 13px 33px;
+  padding: 13px 30px 13px 32px;
+  background-size: 24px;
 }
 
 .cabecalho__switch {
@@ -448,10 +452,34 @@ iframe {
     height: 100vh;
   }
 
+  .cabecalho__apps {
+    background-image: url(/img/topbar/apps.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5vw 5vw 5vw 5vw;
+    background-size: 18px;  
+  }
+
+  .cabecalho__notificacoes {
+    background-image: url(../img/topbar/notifications.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5vw 5vw 5vw 5vw;
+    background-size: 18px;
+  }
+
+  .cabecalho__avatar {
+    background-image: url(../img/topbar/Avatar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5vw 5vw 5vw 5vw;
+    background-size: 24px;
+  }
+
   .cabecalho__switch {
     position: relative;
     display: inline-block;
-    padding: 13px 30px 13px 13px;
+    padding: 5vw 5vw 5vw 5vw;
     width: 60px;
     height: 34px;
     display: none;

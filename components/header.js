@@ -6,8 +6,8 @@ export function criarHeader() {
   header.innerHTML = `
     <nav class="cabecalho__container">
       <div class="logo__item">
-        <img class="logo__desktop" src="/img/logo.png" alt="Logo do VidFlow Desktop" />
-        <img class="logo__mobile" src="/img/logo-celular.png" alt="Logo do VidFlow Mobile" />
+        <img class="logo__desktop" src="/img/logo.png" alt="Logo BadTube Desktop" />
+        <img class="logo__mobile" src="/img/logo-celular.png" alt="Logo BadTube Mobile" />
       </div>
       <div class="cabecalho__pesquisar__item"></div>
       <div class="cabecalho__icones__item"></div>
